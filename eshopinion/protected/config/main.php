@@ -15,6 +15,7 @@ return array(
 	// autoloading model and component classes
 	'import'=>array(
                 'ext.restfullyii.components.*',
+                'ext.giix-components.*',
                 'application.models.*',
 		'application.components.*',
 	),
@@ -27,6 +28,9 @@ return array(
 			'password'=>'Z9.arUTM',
 			// If removed, Gii defaults to localhost only. Edit carefully to taste.
 			'ipFilters'=>array('127.0.0.1','::1'),
+                        'generatorPaths' => array(
+                            'ext.giix-core', // giix generators
+                        ),
 		),
 		
 	),
@@ -55,6 +59,7 @@ return array(
                         '<controller:\w+>/<action:\w+>' => '<controller>/<action>',
                     ),
                 ),
+            
             
 		'db' => array(
                     'connectionString' => 'mysql:host=localhost;dbname=mydb',

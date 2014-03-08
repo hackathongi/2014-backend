@@ -1,75 +1,55 @@
-<?php
-/* @var $this ShopController */
-/* @var $data Shop */
-?>
-
 <div class="view">
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('user_id')); ?>:</b>
-	<?php echo CHtml::link(CHtml::encode($data->user_id), array('view', 'id'=>$data->user_id)); ?>
+	<?php echo GxHtml::encode($data->getAttributeLabel('id')); ?>:
+	<?php echo GxHtml::link(GxHtml::encode($data->id), array('view', 'id' => $data->id)); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('name')); ?>:</b>
-	<?php echo CHtml::encode($data->name); ?>
+	<?php echo GxHtml::encode($data->getAttributeLabel('name')); ?>:
+	<?php echo GxHtml::encode($data->name); ?>
 	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('address')); ?>:</b>
-	<?php echo CHtml::encode($data->address); ?>
+	<?php echo GxHtml::encode($data->getAttributeLabel('address')); ?>:
+	<?php echo GxHtml::encode($data->address); ?>
 	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('url')); ?>:</b>
-	<?php echo CHtml::encode($data->url); ?>
+	<?php echo GxHtml::encode($data->getAttributeLabel('url')); ?>:
+	<?php echo GxHtml::encode($data->url); ?>
 	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('phone')); ?>:</b>
-	<?php echo CHtml::encode($data->phone); ?>
+	<?php echo GxHtml::encode($data->getAttributeLabel('phone')); ?>:
+	<?php echo GxHtml::encode($data->phone); ?>
 	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('email')); ?>:</b>
-	<?php echo CHtml::encode($data->email); ?>
+	<?php echo GxHtml::encode($data->getAttributeLabel('email')); ?>:
+	<?php echo GxHtml::encode($data->email); ?>
 	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('logo_url')); ?>:</b>
-	<?php echo CHtml::encode($data->logo_url); ?>
+	<?php echo GxHtml::encode($data->getAttributeLabel('logo_url')); ?>:
+	<?php echo GxHtml::encode($data->logo_url); ?>
 	<br />
-
 	<?php /*
-	<b><?php echo CHtml::encode($data->getAttributeLabel('hours_to_email')); ?>:</b>
-	<?php echo CHtml::encode($data->hours_to_email); ?>
+	<?php echo GxHtml::encode($data->getAttributeLabel('hours_to_email')); ?>:
+	<?php echo GxHtml::encode($data->hours_to_email); ?>
 	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('username')); ?>:</b>
-	<?php echo CHtml::encode($data->username); ?>
+	<?php echo GxHtml::encode($data->getAttributeLabel('username')); ?>:
+	<?php echo GxHtml::encode($data->username); ?>
 	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('password')); ?>:</b>
-	<?php echo CHtml::encode($data->password); ?>
+	<?php echo GxHtml::encode($data->getAttributeLabel('password')); ?>:
+	<?php echo GxHtml::encode($data->password); ?>
 	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('token')); ?>:</b>
-	<?php echo CHtml::encode($data->token); ?>
+	<?php echo GxHtml::encode($data->getAttributeLabel('token')); ?>:
+	<?php echo GxHtml::encode($data->token); ?>
 	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('data_add')); ?>:</b>
-	<?php echo CHtml::encode($data->data_add); ?>
+	<?php echo GxHtml::encode($data->getAttributeLabel('data_add')); ?>:
+	<?php echo GxHtml::encode($data->data_add); ?>
 	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('date_update')); ?>:</b>
-	<?php echo CHtml::encode($data->date_update); ?>
+	<?php echo GxHtml::encode($data->getAttributeLabel('date_update')); ?>:
+	<?php echo GxHtml::encode($data->date_update); ?>
 	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('is_client')); ?>:</b>
-	<?php echo CHtml::encode($data->is_client); ?>
+	<?php echo GxHtml::encode($data->getAttributeLabel('is_client')); ?>:
+	<?php echo GxHtml::encode($data->is_client); ?>
 	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('url_scrap')); ?>:</b>
-	<?php echo CHtml::encode($data->url_scrap); ?>
+	<?php echo GxHtml::encode($data->getAttributeLabel('url_scrap')); ?>:
+	<?php echo GxHtml::encode($data->url_scrap); ?>
 	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('mandrill_key')); ?>:</b>
-	<?php echo CHtml::encode($data->mandrill_key); ?>
+	<?php echo GxHtml::encode($data->getAttributeLabel('mandrill_key')); ?>:
+	<?php echo GxHtml::encode($data->mandrill_key); ?>
 	<br />
-
 	*/ ?>
 
 </div>
