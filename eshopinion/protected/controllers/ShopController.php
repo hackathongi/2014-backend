@@ -170,8 +170,4 @@ class ShopController extends ERestController
 			Yii::app()->end();
 		}
 	}
-        
-        public function doRestList() {
-            echo 'hola';
-        }
 }

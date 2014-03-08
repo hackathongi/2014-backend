@@ -15,7 +15,7 @@ return array(
 	// autoloading model and component classes
 	'import'=>array(
                 'ext.restfullyii.components.*',
-		'application.models.*',
+                'application.models.*',
 		'application.components.*',
 	),
 
