@@ -16,8 +16,8 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model, 'address'); ?>
-		<?php echo $form->textField($model, 'address', array('maxlength' => 512)); ?>
+		<?php echo $form->label($model, 'adress'); ?>
+		<?php echo $form->textField($model, 'adress', array('maxlength' => 512)); ?>
 	</div>
 
 	<div class="row">
@@ -41,11 +41,6 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model, 'hours_to_email'); ?>
-		<?php echo $form->textField($model, 'hours_to_email'); ?>
-	</div>
-
-	<div class="row">
 		<?php echo $form->label($model, 'username'); ?>
 		<?php echo $form->textField($model, 'username', array('maxlength' => 45)); ?>
 	</div>
@@ -56,28 +51,23 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model, 'data_add'); ?>
-		<?php echo $form->textField($model, 'data_add'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->label($model, 'date_update'); ?>
-		<?php echo $form->textField($model, 'date_update'); ?>
-	</div>
-
-	<div class="row">
 		<?php echo $form->label($model, 'is_client'); ?>
-		<?php echo $form->textField($model, 'is_client'); ?>
+		<?php echo $form->dropDownList($model, 'is_client', array('0' => Yii::t('app', 'No'), '1' => Yii::t('app', 'Yes')), array('prompt' => Yii::t('app', 'All'))); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->label($model, 'url_scrap'); ?>
-		<?php echo $form->textField($model, 'url_scrap', array('maxlength' => 512)); ?>
+		<?php echo $form->dropDownList($model, 'url_scrap', array('0' => Yii::t('app', 'No'), '1' => Yii::t('app', 'Yes')), array('prompt' => Yii::t('app', 'All'))); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model, 'mandrill_key'); ?>
-		<?php echo $form->textField($model, 'mandrill_key', array('maxlength' => 25)); ?>
+		<?php echo $form->label($model, 'createdAt'); ?>
+		<?php echo $form->textField($model, 'createdAt'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->label($model, 'updatedAt'); ?>
+		<?php echo $form->textField($model, 'updatedAt'); ?>
 	</div>
 
 	<div class="row buttons">

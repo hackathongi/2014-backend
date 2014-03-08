@@ -16,7 +16,7 @@ $('.search-button').click(function(){
 	return false;
 });
 $('.search-form form').submit(function(){
-	$.fn.yiiGridView.update('shop-grid', {
+	$.fn.yiiGridView.update('shops-grid', {
 		data: $(this).serialize()
 	});
 	return false;
@@ -38,27 +38,33 @@ You may optionally enter a comparison operator (&lt;, &lt;=, &gt;, &gt;=, &lt;&g
 </div><!-- search-form -->
 
 <?php $this->widget('zii.widgets.grid.CGridView', array(
-	'id' => 'shop-grid',
+	'id' => 'shops-grid',
 	'dataProvider' => $model->search(),
 	'filter' => $model,
 	'columns' => array(
 		'id',
 		'name',
-		'address',
+		'adress',
 		'url',
 		'phone',
 		'email',
 		/*
 		'logo_url',
-		'hours_to_email',
 		'username',
 		'password',
 		'token',
-		'data_add',
-		'date_update',
-		'is_client',
-		'url_scrap',
-		'mandrill_key',
+		array(
+					'name' => 'is_client',
+					'value' => '($data->is_client === 0) ? Yii::t(\'app\', \'No\') : Yii::t(\'app\', \'Yes\')',
+					'filter' => array('0' => Yii::t('app', 'No'), '1' => Yii::t('app', 'Yes')),
+					),
+		array(
+					'name' => 'url_scrap',
+					'value' => '($data->url_scrap === 0) ? Yii::t(\'app\', \'No\') : Yii::t(\'app\', \'Yes\')',
+					'filter' => array('0' => Yii::t('app', 'No'), '1' => Yii::t('app', 'Yes')),
+					),
+		'createdAt',
+		'updatedAt',
 		*/
 		array(
 			'class' => 'CButtonColumn',
