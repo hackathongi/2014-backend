@@ -7,17 +7,16 @@
 // CWebApplication properties can be configured here.
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-	'name'=>'eShopinion',
+	'name'=>'My Web Application',
 
 	// preloading 'log' component
 	'preload'=>array('log'),
 
 	// autoloading model and component classes
 	'import'=>array(
-                'ext.restfullyii.components.*',
-                'ext.giix-components.*',
-                'application.models.*',
+		'application.models.*',
 		'application.components.*',
+                'ext.giix-components.*', // giix components
 	),
     
         'theme'=>'blackboot',
@@ -25,15 +24,16 @@ return array(
 	'modules'=>array(
 		// uncomment the following to enable the Gii tool
 		
-		'gii'=>array(
-			'class'=>'system.gii.GiiModule',
-			'password'=>'Z9.arUTM',
-			// If removed, Gii defaults to localhost only. Edit carefully to taste.
-			'ipFilters'=>array('127.0.0.1','::1'),
-                        'generatorPaths' => array(
-                            'ext.giix-core', // giix generators
-                        ),
-		),
+		'gii' => array(
+                    'class' => 'system.gii.GiiModule',
+                    'password' => '',
+                    // If removed, Gii defaults to localhost only. Edit carefully to taste.
+                    'ipFilters' => array('127.0.0.1', '::1'),
+                    'generatorPaths' => array(
+                        'ext.giix-core', // giix generators
+                        'bootstrap.gii',
+                    ),
+                ),
 		
 	),
 
@@ -44,26 +44,18 @@ return array(
 			'allowAutoLogin'=>true,
 		),
 		// uncomment the following to enable URLs in path-format
-		
-                'urlManager' => array(
-                    'urlFormat' => 'path',
-                    'rules' => array(
-                        'api/<controller:\w+>' => array('<controller>/restList', 'verb' => 'GET'),
-                        'api/<controller:\w+>/<id:\w+>' => array('<controller>/restView', 'verb' => 'GET'),
-                        'api/<controller:\w+>/<id:\w+>/<var:\w*>' => array('<controller>/restView', 'verb' => 'GET'),
-                        'api/<controller:\w+>/<id:\w+>/<var:\w*>/<var2:\w*>' => array('<controller>/restView', 'verb' => 'GET'),
-                        array('<controller>/restUpdate', 'pattern' => 'api/<controller:\w+>/<id:\w+>', 'verb' => 'POST'),
-                        array('<controller>/restDelete', 'pattern' => 'api/<controller:\w+>/<id:\d+>', 'verb' => 'DELETE'),
-                        array('<controller>/restCreate', 'pattern' => 'api/<controller:\w+>', 'verb' => 'POST'),
-                        array('<controller>/restCreate', 'pattern' => 'api/<controller:\w+>/<id:\w+>', 'verb' => 'POST'),
-                        '<controller:\w+>/<id:\d+>' => '<controller>/view',
-                        '<controller:\w+>/<action:\w+>/<id:\d+>' => '<controller>/<action>',
-                        '<controller:\w+>/<action:\w+>' => '<controller>/<action>',
-                    ),
-                ),
-            
+		/*
+		'urlManager'=>array(
+			'urlFormat'=>'path',
+			'rules'=>array(
+				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
+				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
+				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
+			),
+		),
+		*/
 		'db' => array(
-                    'connectionString' => 'mysql:host=localhost;dbname=eshopinion',
+                    'connectionString' => 'mysql:host=localhost;dbname=apidb',
                     'emulatePrepare' => true,
                     'username' => 'api',
                     'password' => 'Z9.arUTM',

@@ -2,7 +2,7 @@
 
 
 <?php $form = $this->beginWidget('GxActiveForm', array(
-	'id' => 'shop-form',
+	'id' => 'shops-form',
 	'enableAjaxValidation' => false,
 ));
 ?>
@@ -19,9 +19,9 @@
 		<?php echo $form->error($model,'name'); ?>
 		</div><!-- row -->
 		<div class="row">
-		<?php echo $form->labelEx($model,'address'); ?>
-		<?php echo $form->textField($model, 'address', array('maxlength' => 512)); ?>
-		<?php echo $form->error($model,'address'); ?>
+		<?php echo $form->labelEx($model,'adress'); ?>
+		<?php echo $form->textField($model, 'adress', array('maxlength' => 512)); ?>
+		<?php echo $form->error($model,'adress'); ?>
 		</div><!-- row -->
 		<div class="row">
 		<?php echo $form->labelEx($model,'url'); ?>
@@ -44,11 +44,6 @@
 		<?php echo $form->error($model,'logo_url'); ?>
 		</div><!-- row -->
 		<div class="row">
-		<?php echo $form->labelEx($model,'hours_to_email'); ?>
-		<?php echo $form->textField($model, 'hours_to_email'); ?>
-		<?php echo $form->error($model,'hours_to_email'); ?>
-		</div><!-- row -->
-		<div class="row">
 		<?php echo $form->labelEx($model,'username'); ?>
 		<?php echo $form->textField($model, 'username', array('maxlength' => 45)); ?>
 		<?php echo $form->error($model,'username'); ?>
@@ -64,29 +59,24 @@
 		<?php echo $form->error($model,'token'); ?>
 		</div><!-- row -->
 		<div class="row">
-		<?php echo $form->labelEx($model,'data_add'); ?>
-		<?php echo $form->textField($model, 'data_add'); ?>
-		<?php echo $form->error($model,'data_add'); ?>
-		</div><!-- row -->
-		<div class="row">
-		<?php echo $form->labelEx($model,'date_update'); ?>
-		<?php echo $form->textField($model, 'date_update'); ?>
-		<?php echo $form->error($model,'date_update'); ?>
-		</div><!-- row -->
-		<div class="row">
 		<?php echo $form->labelEx($model,'is_client'); ?>
-		<?php echo $form->textField($model, 'is_client'); ?>
+		<?php echo $form->checkBox($model, 'is_client'); ?>
 		<?php echo $form->error($model,'is_client'); ?>
 		</div><!-- row -->
 		<div class="row">
 		<?php echo $form->labelEx($model,'url_scrap'); ?>
-		<?php echo $form->textField($model, 'url_scrap', array('maxlength' => 512)); ?>
+		<?php echo $form->checkBox($model, 'url_scrap'); ?>
 		<?php echo $form->error($model,'url_scrap'); ?>
 		</div><!-- row -->
 		<div class="row">
-		<?php echo $form->labelEx($model,'mandrill_key'); ?>
-		<?php echo $form->textField($model, 'mandrill_key', array('maxlength' => 25)); ?>
-		<?php echo $form->error($model,'mandrill_key'); ?>
+		<?php echo $form->labelEx($model,'createdAt'); ?>
+		<?php echo $form->textField($model, 'createdAt'); ?>
+		<?php echo $form->error($model,'createdAt'); ?>
+		</div><!-- row -->
+		<div class="row">
+		<?php echo $form->labelEx($model,'updatedAt'); ?>
+		<?php echo $form->textField($model, 'updatedAt'); ?>
+		<?php echo $form->error($model,'updatedAt'); ?>
 		</div><!-- row -->
 
 

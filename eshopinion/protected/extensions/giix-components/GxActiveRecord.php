@@ -151,10 +151,6 @@ abstract class GxActiveRecord extends CActiveRecord {
 		// Get and return the label from the related AR.
 		return self::model($relClassName)->label($n);
 	}
-        protected function beforeValidate()
-        {
-            return parent::beforeValidate();
-        }
 
 	/**
 	 * Returns the text label for the specified attribute.
