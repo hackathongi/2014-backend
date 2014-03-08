@@ -806,3 +806,13 @@ Stack trace:
 REQUEST_URI=/eshopinion/eshopinion/index.php/site/login
 HTTP_REFERER=http://localhost/eshopinion/eshopinion/index.php/order/create
 ---
+2014/03/08 17:03:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "restList".' in /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/CController.php(270): CController->missingAction('restList')
+#1 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/CWebApplication.php(282): CController->run('restList')
+#2 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('order/restList')
+#3 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/eshopinion/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/eshopinion/eshopinion/index.php/api/order
+---

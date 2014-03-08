@@ -63,7 +63,7 @@ return array(
                 ),
             
 		'db' => array(
-                    'connectionString' => 'mysql:host=localhost;dbname=mydb',
+                    'connectionString' => 'mysql:host=localhost;dbname=eshopinion',
                     'emulatePrepare' => true,
                     'username' => 'api',
                     'password' => 'Z9.arUTM',
