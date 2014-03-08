@@ -789,3 +789,20 @@ REQUEST_URI=/eshopinion/eshopinion/index.php/order/create
 in /Applications/XAMPP/xamppfiles/htdocs/eshopinion/eshopinion/protected/views/order/_form.php (48)
 in /Applications/XAMPP/xamppfiles/htdocs/eshopinion/eshopinion/protected/views/order/create.php (19)
 in /Applications/XAMPP/xamppfiles/htdocs/eshopinion/eshopinion/protected/controllers/OrderController.php (27)
+2014/03/08 16:58:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site/login".' in /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#1 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/eshopinion/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/eshopinion/eshopinion/index.php/site/login
+---
+2014/03/08 16:59:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site/login".' in /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#1 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/eshopinion/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/eshopinion/eshopinion/index.php/site/login
+HTTP_REFERER=http://localhost/eshopinion/eshopinion/index.php/order/create
+---

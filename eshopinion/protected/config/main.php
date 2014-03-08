@@ -7,7 +7,7 @@
 // CWebApplication properties can be configured here.
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-	'name'=>'My Web Application',
+	'name'=>'eShopinion',
 
 	// preloading 'log' component
 	'preload'=>array('log'),
@@ -19,6 +19,8 @@ return array(
                 'application.models.*',
 		'application.components.*',
 	),
+    
+        'theme'=>'blackboot',
 
 	'modules'=>array(
 		// uncomment the following to enable the Gii tool
