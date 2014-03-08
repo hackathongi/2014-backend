@@ -606,3 +606,186 @@ REQUEST_URI=/eshopinion/eshopinion/index.php/api/shop/1
 in /Applications/XAMPP/xamppfiles/htdocs/eshopinion/eshopinion/protected/extensions/giix-components/GxController.php (81)
 in /Applications/XAMPP/xamppfiles/htdocs/eshopinion/eshopinion/protected/extensions/restfullyii/components/ERestController.php (422)
 in /Applications/XAMPP/xamppfiles/htdocs/eshopinion/eshopinion/protected/extensions/restfullyii/components/ERestController.php (237)
+2014/03/08 16:34:45 [error] [php] Missing argument 2 for GxController::loadModel(), called in /Applications/XAMPP/xamppfiles/htdocs/eshopinion/eshopinion/protected/extensions/restfullyii/components/ERestController.php on line 422 and defined (/Applications/XAMPP/xamppfiles/htdocs/eshopinion/eshopinion/protected/extensions/giix-components/GxController.php:81)
+Stack trace:
+#0 unknown(0): ShopController->actionRestView()
+#1 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/filters/CFilterChain.php(133): ShopController->runAction()
+#5 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#7 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/filters/CInlineFilter.php(58): ShopController->filterAccessControl()
+#8 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#9 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/eshopinion/protected/extensions/restfullyii/components/ERestController.php(161): CFilterChain->run()
+#10 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/filters/CInlineFilter.php(58): ShopController->filterRestAccessRules()
+#11 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#12 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/CController.php(291): CFilterChain->run()
+#13 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/CController.php(265): ShopController->runActionWithFilters()
+#14 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/CWebApplication.php(282): ShopController->run()
+#15 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#16 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/eshopinion/index.php(13): CWebApplication->run()
+REQUEST_URI=/eshopinion/eshopinion/index.php/api/shop/1
+in /Applications/XAMPP/xamppfiles/htdocs/eshopinion/eshopinion/protected/extensions/giix-components/GxController.php (81)
+in /Applications/XAMPP/xamppfiles/htdocs/eshopinion/eshopinion/protected/extensions/restfullyii/components/ERestController.php (422)
+in /Applications/XAMPP/xamppfiles/htdocs/eshopinion/eshopinion/protected/controllers/ShopController.php (122)
+2014/03/08 16:35:30 [error] [php] Missing argument 2 for GxController::loadModel(), called in /Applications/XAMPP/xamppfiles/htdocs/eshopinion/eshopinion/protected/extensions/restfullyii/components/ERestController.php on line 422 and defined (/Applications/XAMPP/xamppfiles/htdocs/eshopinion/eshopinion/protected/extensions/giix-components/GxController.php:81)
+Stack trace:
+#0 unknown(0): ShopController->actionRestView()
+#1 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/filters/CFilterChain.php(133): ShopController->runAction()
+#5 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#7 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/filters/CInlineFilter.php(58): ShopController->filterAccessControl()
+#8 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#9 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/eshopinion/protected/extensions/restfullyii/components/ERestController.php(161): CFilterChain->run()
+#10 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/filters/CInlineFilter.php(58): ShopController->filterRestAccessRules()
+#11 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#12 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/CController.php(291): CFilterChain->run()
+#13 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/CController.php(265): ShopController->runActionWithFilters()
+#14 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/CWebApplication.php(282): ShopController->run()
+#15 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#16 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/eshopinion/index.php(13): CWebApplication->run()
+REQUEST_URI=/eshopinion/eshopinion/index.php/api/shop/1
+in /Applications/XAMPP/xamppfiles/htdocs/eshopinion/eshopinion/protected/extensions/giix-components/GxController.php (81)
+in /Applications/XAMPP/xamppfiles/htdocs/eshopinion/eshopinion/protected/extensions/restfullyii/components/ERestController.php (422)
+in /Applications/XAMPP/xamppfiles/htdocs/eshopinion/eshopinion/protected/extensions/restfullyii/components/ERestController.php (237)
+2014/03/08 16:37:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/eshopinion/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/eshopinion/eshopinion/index.php?r=gii/giixModel/index
+HTTP_REFERER=http://localhost/eshopinion/eshopinion/index.php?r=gii/giixCrud/index
+---
+2014/03/08 16:38:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/eshopinion/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/eshopinion/eshopinion/index.php?r=gii/giixModel/index
+---
+2014/03/08 16:38:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/eshopinion/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/eshopinion/eshopinion/index.php?r=gii
+---
+2014/03/08 16:38:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/eshopinion/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/eshopinion/eshopinion/index.php?r=gii
+---
+2014/03/08 16:38:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/eshopinion/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/eshopinion/eshopinion/index.php?gii/giixModel/index
+---
+2014/03/08 16:38:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/eshopinion/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/eshopinion/eshopinion/index.php?gii
+---
+2014/03/08 16:38:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/eshopinion/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/eshopinion/eshopinion/index.php?giix
+---
+2014/03/08 16:44:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "list".' in /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/CController.php(270): CController->missingAction('list')
+#1 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/CWebApplication.php(282): CController->run('list')
+#2 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('opinion/list')
+#3 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/eshopinion/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/eshopinion/eshopinion/index.php/opinion/list
+---
+2014/03/08 16:44:39 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/CController.php:336
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#9 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('opinion/view')
+#10 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/eshopinion/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/eshopinion/eshopinion/index.php/opinion/view
+---
+2014/03/08 16:44:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "list".' in /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/CController.php(270): CController->missingAction('list')
+#1 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/CWebApplication.php(282): CController->run('list')
+#2 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('shop/list')
+#3 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/eshopinion/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/eshopinion/eshopinion/index.php/shop/list
+---
+2014/03/08 16:44:49 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/CController.php:336
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#9 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('shop/view')
+#10 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/eshopinion/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/eshopinion/eshopinion/index.php/shop/view
+---
+2014/03/08 16:49:31 [error] [php] include(Customer.php): failed to open stream: No such file or directory (/Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/YiiBase.php:427)
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/eshopinion/protected/views/order/_form.php(48): spl_autoload_call()
+#1 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/CBaseController.php(126): require()
+#2 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/CBaseController.php(95): OrderController->renderInternal()
+#3 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/CController.php(869): OrderController->renderFile()
+#4 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/eshopinion/protected/views/order/create.php(19): OrderController->renderPartial()
+#5 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/CBaseController.php(126): require()
+#6 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/CBaseController.php(95): OrderController->renderInternal()
+#7 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/CController.php(869): OrderController->renderFile()
+#8 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/CController.php(782): OrderController->renderPartial()
+#9 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/eshopinion/protected/controllers/OrderController.php(27): OrderController->render()
+#10 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/actions/CInlineAction.php(49): OrderController->actionCreate()
+#11 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#12 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/CController.php(286): OrderController->runAction()
+#13 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/CController.php(265): OrderController->runActionWithFilters()
+#14 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/CWebApplication.php(282): OrderController->run()
+#15 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#16 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /Applications/XAMPP/xamppfiles/htdocs/eshopinion/eshopinion/index.php(13): CWebApplication->run()
+REQUEST_URI=/eshopinion/eshopinion/index.php/order/create
+in /Applications/XAMPP/xamppfiles/htdocs/eshopinion/eshopinion/protected/views/order/_form.php (48)
+in /Applications/XAMPP/xamppfiles/htdocs/eshopinion/eshopinion/protected/views/order/create.php (19)
+in /Applications/XAMPP/xamppfiles/htdocs/eshopinion/eshopinion/protected/controllers/OrderController.php (27)

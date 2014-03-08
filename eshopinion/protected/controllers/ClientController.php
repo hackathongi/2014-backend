@@ -1,6 +1,6 @@
 <?php
 
-class ShopController extends ERestController {
+class ClientController extends ERestController {
 
     /**
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
@@ -47,16 +47,16 @@ class ShopController extends ERestController {
 
 	public function actionView($id) {
 		$this->render('view', array(
-			'model' => $this->loadModel($id, 'Shop'),
+			'model' => $this->loadModel($id, 'Client'),
 		));
 	}
 
 	public function actionCreate() {
-		$model = new Shop;
+		$model = new Client;
 
 
-		if (isset($_POST['Shop'])) {
-			$model->setAttributes($_POST['Shop']);
+		if (isset($_POST['Client'])) {
+			$model->setAttributes($_POST['Client']);
 
 			if ($model->save()) {
 				if (Yii::app()->getRequest()->getIsAjaxRequest())
@@ -70,11 +70,11 @@ class ShopController extends ERestController {
 	}
 
 	public function actionUpdate($id) {
-		$model = $this->loadModel($id, 'Shop');
+		$model = $this->loadModel($id, 'Client');
 
 
-		if (isset($_POST['Shop'])) {
-			$model->setAttributes($_POST['Shop']);
+		if (isset($_POST['Client'])) {
+			$model->setAttributes($_POST['Client']);
 
 			if ($model->save()) {
 				$this->redirect(array('view', 'id' => $model->id));
@@ -88,7 +88,7 @@ class ShopController extends ERestController {
 
 	public function actionDelete($id) {
 		if (Yii::app()->getRequest()->getIsPostRequest()) {
-			$this->loadModel($id, 'Shop')->delete();
+			$this->loadModel($id, 'Client')->delete();
 
 			if (!Yii::app()->getRequest()->getIsAjaxRequest())
 				$this->redirect(array('admin'));
@@ -97,26 +97,28 @@ class ShopController extends ERestController {
 	}
 
 	public function actionIndex() {
-		$dataProvider = new CActiveDataProvider('Shop');
+		$dataProvider = new CActiveDataProvider('Client');
 		$this->render('index', array(
 			'dataProvider' => $dataProvider,
 		));
 	}
 
 	public function actionAdmin() {
-		$model = new Shop('search');
+		$model = new Client('search');
 		$model->unsetAttributes();
 
-		if (isset($_GET['Shop']))
-			$model->setAttributes($_GET['Shop']);
+		if (isset($_GET['Client']))
+			$model->setAttributes($_GET['Client']);
 
 		$this->render('admin', array(
 			'model' => $model,
 		));
 	}
         
+                
         public function doRestView($id)
         {
-            $this->renderJson(array('success'=>true, 'timestamp'=>date("Y-m-d H:i:s"), 'message'=>'Record Retrieved Successfully', 'data'=>$this->loadModel($id, 'Shop')));
+            $this->renderJson(array('success'=>true, 'timestamp'=>date("Y-m-d H:i:s"), 'message'=>'Record Retrieved Successfully', 'data'=>$this->loadModel($id, 'Client')));
         }
+
 }
